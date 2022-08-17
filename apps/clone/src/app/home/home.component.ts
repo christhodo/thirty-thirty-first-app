@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  courseLessons = [
+  lessons = [
     { title: 'Hello Angular' },
     { title: 'Component Fundamentals' },
     { title: 'Template Driven Forms' },
@@ -17,7 +17,13 @@ export class HomeComponent implements OnInit {
     { title: 'Unit Testing Fundamentals' },
   ];
 
+  selectedLesson: any;
+
   constructor() {}
 
   ngOnInit() {}
+
+  selectLesson(lesson) {
+    this.selectedLesson = lesson;
+  }
 }
