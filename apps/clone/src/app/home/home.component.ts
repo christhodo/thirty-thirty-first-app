@@ -7,6 +7,7 @@ import { LessonsService } from '../common/services/lessons.service';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
+  lessons$;
   lessons = [];
 
   selectedLesson: any;
@@ -15,6 +16,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.lessons = this.lessonsService.lessons;
+    this.lessons$ = this.lessonsService.lessons$;
   }
 
   selectLesson(lesson) {
