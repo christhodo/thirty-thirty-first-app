@@ -38,7 +38,7 @@ export class CoursesService {
     },
     {
       id: '3',
-      title: 'Learn NX with Angular CLI',
+      title: 'Learn NX with Angular CLIs',
       description: 'Unleash the power of the force',
       percentComplete: 98,
       favorite: true,
